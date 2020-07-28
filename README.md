@@ -1,16 +1,27 @@
-### Hi there 👋
+# Hi there 👋
 
-<!--
-**aaronreidsmith/aaronreidsmith** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<details open><summary>Python</summary>
+<p>
 
-Here are some ideas to get you started:
+```python
+class AaronReidSmith:
+	def __init__(self):
+	    self.username = 'aaronreidsmith'
+	    self.name = 'Aaron Smith'
+	    self.email = 'aaronreidsmith@gmail.com'
+	    self.social = {
+	    	'linkedin': 'https://www.linkedin.com/in/aaronreidsmith/',
+	    	'github': 'https://github.com/aaronreidsmith',
+	    	'stack_overflow': 'https://stackoverflow.com/users/10696164/aaron-smith'
+	    }
+	    self.skills = {
+	    	'languages': ['Python', 'SQL', 'Scala', 'Java', 'Bash', 'R', 'Perl', 'PHP'],
+	    	'big_data': ['Spark', 'Databricks', 'Kinesis', 'Kafka', 'Hadoop']
+	    	'databases': ['Snowflake', 'Redshift', 'MySQL', 'PostgreSQL', 'DynamoDB'],
+	    	'ci_cd': ['Azure Pipelines', 'GitHub Actions', 'Jenkins', 'Travis CI', 'Appveyor', 'CircleCI'],
+	    	'clouds': ['Amazon Web Services', 'Google Cloud Platform']
+	    }
+```
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+</p>
+</details>
