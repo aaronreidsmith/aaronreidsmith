@@ -66,11 +66,44 @@ println(me)
 </p>
 </details>
 
-<details><summary>Java</summary>
+<details><summary>SQL (PostgreSQL)</summary>
 <p>
 
-```java
+```sql
+CREATE TABLE aaron_reid_smith(
+  username VARCHAR,
+  name     VARCHAR,
+  email    VARCHAR,
+  social   JSON,
+  skills   JSON
+);
 
+INSERT INTO aaron_reid_smith VALUES (
+  'aaronreidsmith',
+  'Aaron Smith',
+  'aaronreidsmith@gmail.com',
+  $$
+  {
+    "linkedin": "https://www.linkedin.com/in/aaronreidsmith",
+    "github": "https://github.com/aaronreidsmith",
+    "stack_overflow": "https://stackoverflow.com/users/10696164/aaron-smith"
+  }
+  $$,
+  $$
+  {
+    "languages": ["Python", "SQL", "Scala", "Java", "Bash", "R", "Perl", "PHP"],
+    "big_data": ["Spark", "Databricks", "Kinesis", "Kafka", "Hadoop"],
+    "databases": ["Snowflake", "Redshift", "MySQL", "PostgreSQL", "DynamoDB"],
+    "ci_cd": ["Azure Pipelines", "GitHub Actions", "Jenkins", "Travis CI", "Appveyor", "CircleCI"],
+    "cloud_platforms": ["Amazon Web Services", "Google Cloud Platform"]
+  }
+  $$
+);
+
+SELECT
+  $$Hi, I'm $$ || name || $$. Nice to meet you!$$
+FROM aaron_reid_smith
+-- Hi, I'm Aaron Smith. Nice to meet you!
 ```
 
 </p>
