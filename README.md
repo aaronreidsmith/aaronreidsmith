@@ -15,38 +15,10 @@ class AaronReidSmith:
             'stack_overflow': 'https://stackoverflow.com/users/10696164/aaron-smith'
         }
         self.skills = {
-            'languages': [
-                'Python',
-                'SQL',
-                'Scala',
-                'Java',
-                'Bash',
-                'R',
-                'Perl',
-                'PHP'
-            ],
-            'big_data': [
-                'Spark',
-                'Databricks',
-                'Kinesis',
-                'Kafka',
-                'Hadoop'
-            ],
-            'databases': [
-                'Snowflake',
-                'Redshift',
-                'MySQL',
-                'PostgreSQL',
-                'DynamoDB'
-            ],
-            'ci_cd': [
-                'Azure Pipelines',
-                'GitHub Actions',
-                'Jenkins',
-                'Travis CI',
-                'Appveyor',
-                'CircleCI'
-            ],
+            'languages': ['Python', 'SQL', 'Scala', 'Java', 'Bash', 'R', 'Perl', 'PHP'],
+            'big_data': ['Spark', 'Databricks', 'Kinesis', 'Kafka', 'Hadoop'],
+            'databases': ['Snowflake', 'Redshift', 'MySQL', 'PostgreSQL', 'DynamoDB'],
+            'ci_cd': ['Azure Pipelines', 'GitHub Actions', 'Jenkins', 'Travis CI', 'Appveyor', 'CircleCI'],
             'cloud_platforms': ['Amazon Web Services', 'Google Cloud Platform']
         }
         
