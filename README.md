@@ -101,8 +101,8 @@ INSERT INTO aaron_reid_smith VALUES (
 );
 
 SELECT
-  $$Hi, I'm $$ || name || $$. Nice to meet you!$$
-FROM aaron_reid_smith
+  'Hi, I''m ' || name || '. Nice to meet you!'
+FROM aaron_reid_smith;
 -- Hi, I'm Aaron Smith. Nice to meet you!
 ```
 
