@@ -25,7 +25,7 @@ class AaronReidSmith:
                 'R',
                 'Perl',
                 'PHP'
-                ],
+            ],
             'big_data': [
                 'Spark',
                 'Databricks',
