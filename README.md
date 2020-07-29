@@ -49,7 +49,7 @@ print(me)
 
 ```scala
 class AaronReidSmith {
-  val userName: String = "aaronreidsmith"
+  val username: String = "aaronreidsmith"
   val name: String     = "Aaron Smith"
   val email: String    = "aaronreidsmith@gmail.com"
   val social: Map[String, String] = Map(
