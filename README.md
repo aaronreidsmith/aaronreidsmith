@@ -80,7 +80,7 @@ println(me)
 <p>
 
 ```sql
-CREATE TABLE aaron_reid_smith(
+CREATE TABLE aaron_reid_smith (
   username VARCHAR,
   name     VARCHAR,
   email    VARCHAR,
@@ -111,7 +111,7 @@ INSERT INTO aaron_reid_smith VALUES (
 );
 
 SELECT
-  'Hi, I''m ' || name || '. Nice to meet you!'
+  'Hi, I''m ' || name || '. Nice to meet you!' AS me
 FROM aaron_reid_smith;
 -- Hi, I'm Aaron Smith. Nice to meet you!
 ```
