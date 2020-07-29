@@ -8,7 +8,7 @@ I'm Aaron Smith, a Data Engineer at [Sumo Logic](https://www.sumologic.com/) and
 Feel free to contact me through my social links above, and take a look at my summary-as-code (in your preferred language) below!
 
 
-## Summary as Code 
+## Summary-as-Code 
 
 <details open><summary>Python</summary>
 <p>
