@@ -3,12 +3,12 @@
 [![Gmail](https://img.shields.io/badge/-aaronreidsmith@gmail.com-D14836?style=flat&logo=Gmail&logoColor=white&link=mailto:aaronreidsmith@gmail.com)](mailto:aaronreidsmith@gmail.com)
 
 ## About me
-I'm Aaron Smith, a Data Engineer at [Sumo Logic](https://www.sumologic.com/) and an active contributor to Python's leading equivalent to R's `auto_arima`, [`pmdarima`](https://github.com/alkaline-ml/pmdarima). Currently working to process billions of data points per day using Scala and Kafka Streams.
+I'm Aaron Smith, a Data Engineer at [Sumo Logic](https://www.sumologic.com/) and an active contributor to Python's leading equivalent to R's `auto.arima`, [`pmdarima`](https://github.com/alkaline-ml/pmdarima). Currently working to process billions of data points per day using Scala and Kafka Streams.
 
 Feel free to contact me through my social links above, and take a look at my summary-as-code (in your preferred language) below!
 
 
-## Summary-as-Code 
+## Summary-as Code 
 
 <details open><summary>Python</summary>
 <p>
