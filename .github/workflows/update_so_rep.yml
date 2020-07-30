@@ -1,0 +1,28 @@
+name: Update Stack Overflow Reputation
+
+on:
+  push:
+    branches:
+      - '*'
+
+  schedule:
+    - cron: '0 7 * * *'  # Every day at 07:00 UTC (1AM CST or 2AM CDT)
+
+jobs:
+  update:
+    name: Update Stack Overflow Reputation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout master
+        uses: actions/checkout@master
+      - name: Setup Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: '3.7'
+          architecture: 'x64'
+      - name: Install Requirements
+        run: python -m pip install requests
+      - name: Run Python Script
+        run: python .github/utils/update_so_rep.py
+        env:
+          ZAPIER_SHA: ${{ secrets.ZAPIER_SHA }}
