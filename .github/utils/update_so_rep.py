@@ -32,7 +32,7 @@ def millify(n):
     final_num = float(n / 10 ** (3 * millidx))
     one_decimal = round(final_num, 1)
 
-    # If the number is in the millions, and has a decimal, we want to show one
+    # If the number is in the thousands, and has a decimal, we want to show one
     # decimal. I.e.:
     #  - 967123  -> 967k
     #  - 1000123 -> 1M
@@ -45,7 +45,8 @@ def millify(n):
 # Dict of gh username to stack overflow ID
 people_to_update = {
     'tgsmith61591': '3015734',
-    'aaronreidsmith': '10696164'
+    'aaronreidsmith': '10696164',
+    'charlesdrotar': '10851010'
 }
 
 # Open a session to save time
