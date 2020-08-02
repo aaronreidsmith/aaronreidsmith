@@ -1,7 +1,7 @@
 # Hi There 👋
-[![LinkedIn](https://img.shields.io/badge/-Aaron_Smith-blue?style=flat&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/aaronreidsmith/)](https://www.linkedin.com/in/aaronreidsmith/)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/aaronreidsmith/)](https://www.linkedin.com/in/aaronreidsmith/)
 [![Stack Overflow](https://img.shields.io/badge/-Stack_Overflow-FE7A16?style=flat&logo=Stack-Overflow&logoColor=white&link=https://stackoverflow.com/users/10696164/aaron-smith)](https://stackoverflow.com/users/10696164/aaron-smith)
-[![Gmail](https://img.shields.io/badge/-aaronreidsmith@gmail.com-D14836?style=flat&logo=Gmail&logoColor=white&link=mailto:aaronreidsmith@gmail.com)](mailto:aaronreidsmith@gmail.com)
+[![Gmail](https://img.shields.io/badge/-Email-D14836?style=flat&logo=Gmail&logoColor=white&link=mailto:aaronreidsmith@gmail.com)](mailto:aaronreidsmith@gmail.com)
 
 ## About me
 I'm Aaron Smith, a Data Engineer at [Sumo Logic](https://www.sumologic.com/) and an active contributor to Python's leading equivalent to R's `auto.arima`, [`pmdarima`](https://github.com/alkaline-ml/pmdarima). Currently working to process billions of data points per day using Scala and Kafka Streams.
