@@ -72,7 +72,7 @@ val me = Person(
   name     = "Aaron Smith",
   email    = "aaronreidsmith@gmail.com",
   social   = Map(
-  	"linkedin"      -> "https://www.linkedin.com/in/aaronreidsmith/",
+    "linkedin"      -> "https://www.linkedin.com/in/aaronreidsmith/",
     "github"        -> "https://github.com/aaronreidsmith",
     "stackOverflow" -> "https://stackoverflow.com/users/10696164/aaron-smith"
   ),
