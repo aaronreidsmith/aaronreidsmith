@@ -119,3 +119,38 @@ FROM aaron_reid_smith;
 
 </p>
 </details>
+
+<details closed><summary>Raku (Perl 6)</summary>
+<p>
+
+```raku
+class AaronReidSmith {
+    has $.username = 'aaronreidsmith';
+    has $.name = 'Aaron Smith';
+    has $.email = 'aaronreidsmith@gmail.com';
+    has %.social = (
+        'linkedin' => 'https://www.linkedin.com/in/aaronreidsmith/',
+        'github' => 'https://github.com/aaronreidsmith',
+        'stack-overflow' => 'https://stackoverflow.com/users/10696164/aaron-smith'
+    );
+    has %.skills = (
+        'languages' => ('Python', 'SQL', 'Scala', 'Java', 'Bash', 'R', 'Perl', 'PHP'),
+        'big-data' => ('Spark', 'Databricks', 'Kinesis', 'Kafka', 'Hadoop'),
+        'databases' => ('Snowflake', 'Redshift', 'MySQL', 'PostgreSQL', 'DynamoDB'),
+        'ci-cd' => ('Azure Pipelines', 'GitHub Actions', 'Jenkins', 'Travis CI', 'Appveyor', 'CircleCI'),
+        'cloud-platforms' => ('Amazon Web Services', 'Google Cloud Platform')
+    );
+
+    method gist(--> Str) {
+        "Hi, I'm {$!name}. Nice to meet you!"
+    }
+}
+
+my $me = AaronReidSmith.new;
+say $me;
+# Hi, I'm Aaron Smith. Nice to meet you!
+```
+
+</p>
+</details>
+
