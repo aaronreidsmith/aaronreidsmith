@@ -18,6 +18,7 @@ Feel free to contact me through my social links above, and take a look at my sum
 from dataclasses import dataclass
 from typing import Dict, List
 
+
 @dataclass
 class Person:
     username: str
