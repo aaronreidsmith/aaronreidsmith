@@ -27,7 +27,7 @@ class Person:
     social: Dict[str, str]
     skills: Dict[str, List[str]]
     
-    def __str__(self):
+    def __str__(self) -> str:
         return f"Hi, I'm {self.name}. Nice to meet you!"
 		
 me = Person(
