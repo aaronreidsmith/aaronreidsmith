@@ -15,8 +15,8 @@ Feel free to contact me through my social links above, give my [blog](https://aa
 <p>
 
 ```python
+from __future__ import annotations  # Needed for versions <3.9
 from dataclasses import dataclass
-from typing import Dict, List
 
 
 @dataclass
@@ -24,8 +24,8 @@ class Person:
     username: str
     name: str
     email: str
-    social: Dict[str, str]
-    skills: Dict[str, List[str]]
+    social: dict[str, str]
+    skills: dict[str, list[str]]
     
     def __str__(self) -> str:
         return f"Hi, I'm {self.name}. Nice to meet you!"
