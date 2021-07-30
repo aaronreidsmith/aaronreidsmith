@@ -9,9 +9,47 @@ I'm Aaron Smith, a Senior Data Engineer at [IronNet Cybersecurity](https://www.i
 Feel free to contact me through my social links above, give my [blog](https://aaronreidsmith.github.io) a read, or take a look at my summary-as-code (in your preferred language) below!
 
 
-## Summary-as-Code 
+## Summary-as-Code
 
-<details open><summary>Python</summary>
+<details open><summary>Scala</summary>
+<p>
+
+```scala
+case class Person(
+  username: String,
+  name: String,
+  email: String,
+  social: Map[String, String],
+  skills: Map[String, Seq[String]]
+) {
+  override def toString: String = s"Hi, I'm $name. Nice to meet you!"
+}
+
+val me = Person(
+  username = "aaronreidsmith",
+  name     = "Aaron Smith",
+  email    = "aaronreidsmith@gmail.com",
+  social   = Map(
+    "linkedin"      -> "https://www.linkedin.com/in/aaronreidsmith/",
+    "github"        -> "https://github.com/aaronreidsmith",
+    "stackOverflow" -> "https://stackoverflow.com/users/10696164/aaron-smith"
+  ),
+  skills = Map(
+    "languages"      -> Seq("Scala", "Python", "SQL", "Java", "Bash", "Raku", "R", "Perl", "PHP"),
+    "bigData"        -> Seq("Kafka", "Spark", "Databricks", "Kinesis", "Hadoop", "HBase", "Zookeeper", "Hive", "Pig"),
+    "databases"      -> Seq("Snowflake", "Redshift", "MySQL", "PostgreSQL", "DynamoDB"),
+    "ciCd"           -> Seq("Azure Pipelines", "GitHub Actions", "Jenkins", "Travis CI", "Appveyor", "CircleCI"),
+    "cloudPlatforms" -> Seq("Amazon Web Services", "Google Cloud Platform")
+  )
+)
+println(me)
+// Hi, I'm Aaron Smith. Nice to meet you!
+```
+
+</p>
+</details>
+
+<details><summary>Python</summary>
 <p>
 
 ```python
@@ -40,8 +78,8 @@ me = Person(
         'stack_overflow': 'https://stackoverflow.com/users/10696164/aaron-smith'
     },
     skills = {
-        'languages': ['Python', 'SQL', 'Scala', 'Java', 'Bash', 'Raku', 'R', 'Perl', 'PHP'],
-        'big_data': ['Spark', 'Databricks', 'Kinesis', 'Kafka', 'Hadoop'],
+        'languages': ['Scala', 'Python', 'SQL', 'Java', 'Bash', 'Raku', 'R', 'Perl', 'PHP'],
+        'big_data': ['Kafka', 'Spark', 'Databricks', 'Kinesis', 'Hadoop', 'Zookeeper', 'Hive', 'Pig'],
         'databases': ['Snowflake', 'Redshift', 'MySQL', 'PostgreSQL', 'DynamoDB'],
         'ci_cd': ['Azure Pipelines', 'GitHub Actions', 'Jenkins', 'Travis CI', 'Appveyor', 'CircleCI'],
         'cloud_platforms': ['Amazon Web Services', 'Google Cloud Platform']
@@ -49,44 +87,6 @@ me = Person(
 )
 print(me)
 # Hi, I'm Aaron Smith. Nice to meet you!
-```
-
-</p>
-</details>
-
-<details><summary>Scala</summary>
-<p>
-
-```scala
-case class Person(
-  username: String,
-  name: String,
-  email: String,
-  social: Map[String, String],
-  skills: Map[String, Seq[String]]
-) {
-  override def toString: String = s"Hi, I'm $name. Nice to meet you!"
-}
-
-val me = Person(
-  username = "aaronreidsmith",
-  name     = "Aaron Smith",
-  email    = "aaronreidsmith@gmail.com",
-  social   = Map(
-    "linkedin"      -> "https://www.linkedin.com/in/aaronreidsmith/",
-    "github"        -> "https://github.com/aaronreidsmith",
-    "stackOverflow" -> "https://stackoverflow.com/users/10696164/aaron-smith"
-  ),
-  skills = Map(
-    "languages"      -> Seq("Python", "SQL", "Scala", "Java", "Bash", "Raku", "R", "Perl", "PHP"),
-    "bigData"        -> Seq("Spark", "Databricks", "Kinesis", "Kafka", "Hadoop"),
-    "databases"      -> Seq("Snowflake", "Redshift", "MySQL", "PostgreSQL", "DynamoDB"),
-    "ciCd"           -> Seq("Azure Pipelines", "GitHub Actions", "Jenkins", "Travis CI", "Appveyor", "CircleCI"),
-    "cloudPlatforms" -> Seq("Amazon Web Services", "Google Cloud Platform")
-  )
-)
-println(me)
-// Hi, I'm Aaron Smith. Nice to meet you!
 ```
 
 </p>
@@ -117,8 +117,8 @@ INSERT INTO people VALUES (
   $$,
   $$
   {
-    "languages": ["Python", "SQL", "Scala", "Java", "Bash", "Raku", "R", "Perl", "PHP"],
-    "big_data": ["Spark", "Databricks", "Kinesis", "Kafka", "Hadoop"],
+    "languages": ["Scala", "Python", "SQL", "Java", "Bash", "Raku", "R", "Perl", "PHP"],
+    "big_data": ["Kafka", "Spark", "Databricks", "Kinesis", "Hadoop", "HBase", "Zookeeper", "Hive", "Pig"],
     "databases": ["Snowflake", "Redshift", "MySQL", "PostgreSQL", "DynamoDB"],
     "ci_cd": ["Azure Pipelines", "GitHub Actions", "Jenkins", "Travis CI", "Appveyor", "CircleCI"],
     "cloud_platforms": ["Amazon Web Services", "Google Cloud Platform"]
@@ -162,8 +162,8 @@ my $me = Person.new(
         'stack-overflow' => 'https://stackoverflow.com/users/10696164/aaron-smith'
     ),
     skills => (
-        'languages'       => ('Python', 'SQL', 'Scala', 'Java', 'Bash', 'Raku', 'R', 'Perl', 'PHP'),
-        'big-data'        => ('Spark', 'Databricks', 'Kinesis', 'Kafka', 'Hadoop'),
+        'languages'       => ('Scala', 'Python', 'SQL', 'Java', 'Bash', 'Raku', 'R', 'Perl', 'PHP'),
+        'big-data'        => ('Kafka', 'Spark', 'Databricks', 'Kinesis', 'Hadoop', 'Zookeeper', 'Hive', 'Pig'),
         'databases'       => ('Snowflake', 'Redshift', 'MySQL', 'PostgreSQL', 'DynamoDB'),
         'ci-cd'           => ('Azure Pipelines', 'GitHub Actions', 'Jenkins', 'Travis CI', 'Appveyor', 'CircleCI'),
         'cloud-platforms' => ('Amazon Web Services', 'Google Cloud Platform')
@@ -211,8 +211,8 @@ $me = new Person(
         'stack_overflow' => 'https://stackoverflow.com/users/10696164/aaron-smith'
     ),
     array(
-        'languages'       => array('Python', 'SQL', 'Scala', 'Java', 'Bash', 'Raku', 'R', 'Perl', 'PHP'),
-        'big_data'        => array('Spark', 'Databricks', 'Kinesis', 'Kafka', 'Hadoop'),
+        'languages'       => array('Scala', 'Python', 'SQL', 'Java', 'Bash', 'Raku', 'R', 'Perl', 'PHP'),
+        'big_data'        => array('Kafka', 'Spark', 'Databricks', 'Kinesis', 'Hadoop', 'Zookeeper', 'Hive', 'Pig'),
         'databases'       => array('Snowflake', 'Redshift', 'MySQL', 'PostgreSQL', 'DynamoDB'),
         'ci_cd'           => array('Azure Pipelines', 'GitHub Actions', 'Jenkins', 'Travis CI', 'Appveyor', 'CircleCI'),
         'cloud_platforms' => array('Amazon Web Services', 'Google Cloud Platform')
