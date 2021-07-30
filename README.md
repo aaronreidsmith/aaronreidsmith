@@ -29,7 +29,7 @@ val me = Person(
   username = "aaronreidsmith",
   name     = "Aaron Smith",
   email    = "aaronreidsmith@gmail.com",
-  social   = Map(
+  social = Map(
     "linkedin"      -> "https://www.linkedin.com/in/aaronreidsmith/",
     "github"        -> "https://github.com/aaronreidsmith",
     "stackOverflow" -> "https://stackoverflow.com/users/10696164/aaron-smith"
@@ -156,7 +156,7 @@ my $me = Person.new(
     username => 'aaronreidsmith',
     name     => 'Aaron Smith',
     email    => 'aaronreidsmith@gmail.com',
-    social   => (
+    social => (
         'linkedin'       => 'https://www.linkedin.com/in/aaronreidsmith/',
         'github'         => 'https://github.com/aaronreidsmith',
         'stack-overflow' => 'https://stackoverflow.com/users/10696164/aaron-smith'
