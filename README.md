@@ -22,10 +22,10 @@ case class Person(
   social: Map[String, String],
   skills: Map[String, Seq[String]]
 ) {
-  override def toString: String = s"Hi, I'm $name. Nice to meet you!"
+  def greeting: String = s"Hi, I'm $name. Nice to meet you!"
 }
 
-val me = Person(
+val aaron = Person(
   username = "aaronreidsmith",
   name     = "Aaron Smith",
   email    = "aaronreidsmith@gmail.com",
@@ -42,7 +42,7 @@ val me = Person(
     "cloudPlatforms" -> Seq("Amazon Web Services", "Google Cloud Platform")
   )
 )
-println(me)
+println(aaron.greeting)
 // Hi, I'm Aaron Smith. Nice to meet you!
 ```
 
@@ -65,11 +65,11 @@ class Person:
     social: dict[str, str]
     skills: dict[str, list[str]]
     
-    def __str__(self) -> str:
+    def greeting(self) -> str:
         return f"Hi, I'm {self.name}. Nice to meet you!"
 
 
-me = Person(
+aaron = Person(
     username = 'aaronreidsmith',
     name = 'Aaron Smith',
     email = 'aaronreidsmith@gmail.com',
@@ -86,7 +86,7 @@ me = Person(
         'cloud_platforms': ['Amazon Web Services', 'Google Cloud Platform']
     }
 )
-print(me)
+print(aaron.greeting())
 # Hi, I'm Aaron Smith. Nice to meet you!
 ```
 
@@ -148,12 +148,12 @@ class Person {
     has Str  %.social{Str};
     has List %.skills{Str};
 
-    method gist returns Str {
+    method greeting(--> Str) {
         "Hi, I'm $!name. Nice to meet you!";
     }
 }
 
-my $me = Person.new(
+my $aaron = Person.new(
     username => 'aaronreidsmith',
     name     => 'Aaron Smith',
     email    => 'aaronreidsmith@gmail.com',
@@ -170,7 +170,7 @@ my $me = Person.new(
         'cloud-platforms' => ('Amazon Web Services', 'Google Cloud Platform')
     )
 );
-say $me;
+say $aaron.greeting();
 # Hi, I'm Aaron Smith. Nice to meet you!
 ```
 
@@ -197,12 +197,12 @@ class Person {
         $this->skills   = $skills;
     }
 
-    public function __toString() {
+    public function greeting() {
         return "Hi, I'm {$this->name}. Nice to meet you!\n";
     }
 }
 
-$me = new Person(
+$aaron = new Person(
     'aaronreidsmith',
     'Aaron Smith',
     'aaronreidsmith@gmail.com',
@@ -219,7 +219,7 @@ $me = new Person(
         'cloud_platforms' => array('Amazon Web Services', 'Google Cloud Platform')
     )
 );
-echo $me;
+echo $aaron.greeting();
 # Hi, I'm Aaron Smith. Nice to meet you!
 ```
 
