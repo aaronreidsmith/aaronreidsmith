@@ -219,7 +219,7 @@ $aaron = new Person(
         'cloud_platforms' => array('Amazon Web Services', 'Google Cloud Platform')
     )
 );
-echo $aaron.greeting();
+echo $aaron->greeting();
 # Hi, I'm Aaron Smith. Nice to meet you!
 ```
 
