@@ -4,7 +4,7 @@
 [![Gmail](https://img.shields.io/badge/-Email-D14836?style=flat&logo=Gmail&logoColor=white&link=mailto:aaronreidsmith@gmail.com)](mailto:aaronreidsmith@gmail.com)
 
 ## About me
-I'm Aaron Smith, a Senior Data Engineer at [IronNet Cybersecurity](https://www.ironnet.com/) and an active contributor to Python's leading equivalent to R's `auto.arima`, [`pmdarima`](https://github.com/alkaline-ml/pmdarima).  My current work is focused on migrating legacy Spark infrastructure to Kafka-based streaming infrastructure.
+I'm Aaron Smith, a Senior Data Engineer and an active contributor to Python's leading equivalent to R's `auto.arima`, [`pmdarima`](https://github.com/alkaline-ml/pmdarima).
 
 Feel free to contact me through my social links above, give my [blog](https://aaronreidsmith.github.io) a read, or take a look at my summary-as-code (in your preferred language) below!
 
