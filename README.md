@@ -4,7 +4,7 @@
 [![Gmail](https://img.shields.io/badge/-Email-D14836?style=flat&logo=Gmail&logoColor=white&link=mailto:aaronreidsmith@gmail.com)](mailto:aaronreidsmith@gmail.com)
 
 ## About me
-I'm Aaron Smith, a Senior Data Engineer and an active contributor to Python's leading equivalent to R's `auto.arima`, [`pmdarima`](https://github.com/alkaline-ml/pmdarima).
+I'm Aaron Smith, a Senior Engineer at [Sevco Security](https://www.sevcosecurity.com/) and an active contributor to Python's leading equivalent to R's `auto.arima`, [`pmdarima`](https://github.com/alkaline-ml/pmdarima).
 
 Feel free to contact me through my social links above, give my [blog](https://aaronreidsmith.github.io) a read, or take a look at my summary-as-code (in your preferred language) below!
 
@@ -35,7 +35,7 @@ val aaron = Person(
     "stackOverflow" -> "https://stackoverflow.com/users/10696164/aaron-smith"
   ),
   skills = Map(
-    "languages"      -> Seq("Scala", "Python", "SQL", "Java", "Bash", "Raku", "R", "Perl", "PHP"),
+    "languages"      -> Seq("Scala", "Python", "SQL", "Java", "Bash", "Raku", "Go", "R", "Perl", "PHP"),
     "bigData"        -> Seq("Kafka", "Spark", "Databricks", "Kinesis", "Hadoop", "HBase", "Zookeeper", "Hive", "Pig"),
     "databases"      -> Seq("Snowflake", "Redshift", "MySQL", "PostgreSQL", "DynamoDB"),
     "ciCd"           -> Seq("Azure Pipelines", "GitHub Actions", "Jenkins", "Travis CI", "Appveyor", "CircleCI"),
@@ -79,7 +79,7 @@ aaron = Person(
         'stack_overflow': 'https://stackoverflow.com/users/10696164/aaron-smith'
     },
     skills = {
-        'languages': ['Scala', 'Python', 'SQL', 'Java', 'Bash', 'Raku', 'R', 'Perl', 'PHP'],
+        'languages': ['Scala', 'Python', 'SQL', 'Java', 'Bash', 'Raku', 'Go', 'R', 'Perl', 'PHP'],
         'big_data': ['Kafka', 'Spark', 'Databricks', 'Kinesis', 'Hadoop', 'Zookeeper', 'Hive', 'Pig'],
         'databases': ['Snowflake', 'Redshift', 'MySQL', 'PostgreSQL', 'DynamoDB'],
         'ci_cd': ['Azure Pipelines', 'GitHub Actions', 'Jenkins', 'Travis CI', 'Appveyor', 'CircleCI'],
@@ -118,7 +118,7 @@ INSERT INTO people VALUES (
   $$,
   $$
   {
-    "languages": ["Scala", "Python", "SQL", "Java", "Bash", "Raku", "R", "Perl", "PHP"],
+    "languages": ["Scala", "Python", "SQL", "Java", "Bash", "Raku", "Go", "R", "Perl", "PHP"],
     "big_data": ["Kafka", "Spark", "Databricks", "Kinesis", "Hadoop", "HBase", "Zookeeper", "Hive", "Pig"],
     "databases": ["Snowflake", "Redshift", "MySQL", "PostgreSQL", "DynamoDB"],
     "ci_cd": ["Azure Pipelines", "GitHub Actions", "Jenkins", "Travis CI", "Appveyor", "CircleCI"],
@@ -163,7 +163,7 @@ my $aaron = Person.new(
         'stack-overflow' => 'https://stackoverflow.com/users/10696164/aaron-smith'
     ),
     skills => (
-        'languages'       => ('Scala', 'Python', 'SQL', 'Java', 'Bash', 'Raku', 'R', 'Perl', 'PHP'),
+        'languages'       => ('Scala', 'Python', 'SQL', 'Java', 'Bash', 'Raku', 'Go', 'R', 'Perl', 'PHP'),
         'big-data'        => ('Kafka', 'Spark', 'Databricks', 'Kinesis', 'Hadoop', 'Zookeeper', 'Hive', 'Pig'),
         'databases'       => ('Snowflake', 'Redshift', 'MySQL', 'PostgreSQL', 'DynamoDB'),
         'ci-cd'           => ('Azure Pipelines', 'GitHub Actions', 'Jenkins', 'Travis CI', 'Appveyor', 'CircleCI'),
@@ -172,6 +172,53 @@ my $aaron = Person.new(
 );
 say $aaron.greeting();
 # Hi, I'm Aaron Smith. Nice to meet you!
+```
+
+</p>
+</details>
+
+<details closed><summary>Go</summary>
+<p>
+
+```go
+package main
+
+import "fmt"
+
+type Person struct {
+	username string
+	name     string
+	email    string
+	social   map[string]string
+	skills   map[string][]string
+}
+
+func (p Person) Greeting() string {
+	return fmt.Sprint("Hi, I'm ", p.name, ". Nice to meet you!")
+}
+
+func main() {
+	aaron := Person{
+		username: "aaronreidsmith",
+		name:     "Aaron Smith",
+		email:    "aaronreidsmith@gmail.com",
+		social: map[string]string{
+			"linkedin":      "https://www.linkedin.com/in/aaronreidsmith/",
+			"github":        "https://github.com/aaronreidsmith",
+			"stackOverflow": "https://stackoverflow.com/users/10696164/aaron-smith",
+		},
+		skills: map[string][]string{
+			"languages":      []string{"Scala", "Python", "SQL", "Java", "Bash", "Raku", "Go", "R", "Perl", "PHP"},
+			"bigData":        []string{"Kafka", "Spark", "Databricks", "Kinesis", "Hadoop", "HBase", "Zookeeper", "Hive", "Pig"},
+			"databases":      []string{"Snowflake", "Redshift", "MySQL", "PostgreSQL", "DynamoDB"},
+			"ciCd":           []string{"Azure Pipelines", "GitHub Actions", "Jenkins", "Travis CI", "Appveyor", "CircleCI"},
+			"cloudPlatforms": []string{"Amazon Web Services", "Google Cloud Platform"},
+		},
+	}
+	fmt.Println(aaron.Greeting())
+	// Hi, I'm Aaron Smith. Nice to meet you!
+}
+
 ```
 
 </p>
@@ -212,7 +259,7 @@ $aaron = new Person(
         'stack_overflow' => 'https://stackoverflow.com/users/10696164/aaron-smith'
     ),
     array(
-        'languages'       => array('Scala', 'Python', 'SQL', 'Java', 'Bash', 'Raku', 'R', 'Perl', 'PHP'),
+        'languages'       => array('Scala', 'Python', 'SQL', 'Java', 'Bash', 'Raku', 'Go', 'R', 'Perl', 'PHP'),
         'big_data'        => array('Kafka', 'Spark', 'Databricks', 'Kinesis', 'Hadoop', 'Zookeeper', 'Hive', 'Pig'),
         'databases'       => array('Snowflake', 'Redshift', 'MySQL', 'PostgreSQL', 'DynamoDB'),
         'ci_cd'           => array('Azure Pipelines', 'GitHub Actions', 'Jenkins', 'Travis CI', 'Appveyor', 'CircleCI'),
