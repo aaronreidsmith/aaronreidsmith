@@ -1,10 +1,12 @@
+<!-- 2023-01-06: Intentionally renaming this from README to not make it show up on public profile. It just seems kinda... silly? Idk. Maybe will change back later -->
+
 # Hi There 👋
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/aaronreidsmith/)](https://www.linkedin.com/in/aaronreidsmith/)
 [![Stack Overflow](https://img.shields.io/badge/-Stack_Overflow-FE7A16?style=flat&logo=Stack-Overflow&logoColor=white&link=https://stackoverflow.com/users/10696164/aaron-smith)](https://stackoverflow.com/users/10696164/aaron-smith)
 [![Gmail](https://img.shields.io/badge/-Email-D14836?style=flat&logo=Gmail&logoColor=white&link=mailto:aaronreidsmith@gmail.com)](mailto:aaronreidsmith@gmail.com)
 
 ## About me
-I'm Aaron Smith, a Senior Engineer at [Sevco Security](https://www.sevcosecurity.com/) and an active contributor to Python's leading equivalent to R's `auto.arima`, [`pmdarima`](https://github.com/alkaline-ml/pmdarima).
+I'm Aaron Smith, a Senior Software Engineer at [Sevco Security](https://www.sevcosecurity.com/) and an active contributor to Python's leading equivalent to R's `auto.arima`, [`pmdarima`](https://github.com/alkaline-ml/pmdarima).
 
 Feel free to contact me through my social links above, give my [blog](https://aaronreidsmith.github.io) a read, or take a look at my summary-as-code (in your preferred language) below!
 
