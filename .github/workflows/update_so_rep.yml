@@ -1,6 +1,7 @@
 name: Update Stack Overflow Reputation
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 7 * * *'  # Every day at 07:00 UTC (1AM CST or 2AM CDT)
 
